@@ -237,6 +237,9 @@ func Provider() *schema.Provider {
 			"kubernetes_persistent_volume_claim_v1": dataSourceKubernetesPersistentVolumeClaimV1(""),
 			"kubernetes_nodes":                      dataSourceKubernetesNodes(),
 			"kubernetes_server_version":             dataSourceKubernetesServerVersion(),
+		
+			// raw
+			"kubernetes_jwks":                       dataSourceKubernetesJWKS(),
 
 			// networking
 			"kubernetes_ingress":    dataSourceKubernetesIngress(),
